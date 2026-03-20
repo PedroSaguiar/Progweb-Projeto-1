@@ -1,0 +1,70 @@
+/* Signalis Tematico */
+
+body {
+    background-color: #050505;
+    color: #e0e0e0; 
+    font-family: 'Share Tech Mono', monospace;
+    padding: 40px;
+    line-height: 1.8;
+}
+/* Estilização do título*/
+h1 {
+    color: #8b0000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0px #000;
+}
+/* Estilização do texto*/
+p {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    border-left: 3px solid #8b0000; 
+    padding-left: 20px;
+}
+
+/* Estilização das imagens */
+img {
+    border: 1px solid #ac0000;
+    box-shadow: 0 10px 30px rgb(43, 43, 43);
+    transition: transform 0.5s ease, border-color 0.5s;
+    margin: 0;             
+    height: 300px;         
+    width: 100%;           
+    object-fit: cover;     
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.05);
+    border-color: #0227ca; 
+}
+
+/* Botão de compra */
+.btn-primary {
+    display: block;
+    width: 250px;
+    margin: 50px auto;
+    padding: 15px;
+    background: #1a1a1a;
+    color: #8b0000;
+    border: 1px solid #8b0000;
+    border-radius: 0; 
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.btn-primary:hover {
+    background: #5c0000;
+    color: #fff;
+    box-shadow: 0 0 20px rgb(0, 1, 80);
+    transform: translateY(-3px);
+}

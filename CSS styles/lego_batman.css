@@ -1,0 +1,70 @@
+/* Lego batman Tematico */
+
+body {
+    background-color: #1a237e;
+    color: #ffffff; 
+    font-family: 'Bangers', cursive;
+    padding: 40px;
+    line-height: 1.8;
+}
+/* Estilização do título*/
+h1 {
+    color: #ffcc00;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 0px #000;
+}
+/* Estilização do texto*/
+p {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    border-left: 3px solid #ffcc00; 
+    padding-left: 20px;
+}
+
+/* Estilização das imagens */
+img {
+    border: 1px solid #02006e;
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+    transition: transform 0.5s ease, border-color 0.5s;
+    margin: 0;             
+    height: 300px;         
+    width: 100%;           
+    object-fit: cover;     
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.05);
+    border-color: #dfb600; 
+}
+
+/* Botão de compra */
+.btn-primary {
+    display: block;
+    width: 250px;
+    margin: 50px auto;
+    padding: 15px;
+    background: #ffcc00;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 10px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.btn-primary:hover {
+    background: #af9500;
+    color: #fff;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    transform: translateY(-3px);
+}
