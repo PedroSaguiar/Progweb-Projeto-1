@@ -1,0 +1,67 @@
+
+body {
+  background-color: #1a1a1a; /* Grafite Profundo */
+  color: #e0e0e0; /* Branco Gelo para leitura */
+}
+
+/* Título Principal*/
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffc107; /* Amarelo Ouro */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+
+/* Card */
+.card {
+  background-color: #262626; /* Cinza Grafite um pouco mais claro */
+  border: 1px solid #333;
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+/* Hover do card*/
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #ffc107; /* O card "acende" em amarelo */
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.1); /* Brilho sutil amarelo */
+}
+
+/*Estilo do botão*/
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ffc107; /* Amarelo de destaque */
+  color: #1a1a1a; /* Texto escuro para alto contraste */
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+}
+
+/* Hover do botão*/
+.btn:hover {
+  background-color: #e5ac00; /* Amarelo levemente mais escuro */
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+/* Texto do card */
+.card-text {
+  color: #e0e0e0;
+}
+
+/* Título do card */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+/* Hover do título do card*/
+.card:hover .card-title {
+  color: #ffc107;
+}

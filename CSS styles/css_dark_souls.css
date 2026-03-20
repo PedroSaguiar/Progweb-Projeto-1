@@ -1,0 +1,70 @@
+/* Dark Souls III Theme - Palette: Ember Orange, Ash Grey, Iron Black */
+
+body {
+    background-color: #0d0d0d; /* Preto profundo */
+    color: #a6a6a6; /* Cinza claro para leitura (cinzas) */
+    font-family: 'Crimson Text', 'Georgia', serif; /* Fonte mais clássica/medieval */
+    padding: 40px;
+    line-height: 1.8;
+}
+
+h1 {
+    color: #e6e6e6;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    /* Efeito de brilho de brasa no título */
+    text-shadow: 0 0 10px rgba(255, 69, 0, 0.5), 2px 2px 2px #000;
+}
+
+p {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    border-left: 3px solid #4d4d4d; /* Detalhe lateral simulando espada/ferro */
+    padding-left: 20px;
+}
+
+/* Estilização das Imagens */
+img {
+    border: 1px solid #262626;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: transform 0.5s ease, border-color 0.5s;
+    margin: 0;             
+    height: 300px;         
+    width: 100%;           
+    object-fit: cover;     
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.05);
+    border-color: #ff4500; /* Cor de brasa ao passar o mouse */
+}
+
+/* Botão de Compra "Ember" */
+.btn-primary {
+    display: block;
+    width: 250px;
+    margin: 50px auto;
+    padding: 15px;
+    background: linear-gradient(45deg, #4d0f00, #b33000); /* Degradê de fogo apagado */
+    color: #ffccbc;
+    border: 1px solid #ff4500;
+    border-radius: 0; /* Botões retos parecem mais medievais */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: #ff4500;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+    transform: translateY(-3px);
+}
