@@ -1,70 +1,105 @@
-/* Forgive me father Tematico */
+/* Tema: Forgive Me Father*/
 
 body {
-    background-color: #0a0a0a;
-    color: #fff9c4; 
-    font-family: 'Creepster', serif;
+    background-color: #0a0a0c; /* Preto nanquim */
+    color: #d4c4a8; 
+    font-family: 'Courier New', Courier, monospace;
     padding: 40px;
-    line-height: 1.8;
+    line-height: 1.6;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(74, 20, 140, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(0, 100, 0, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
 }
-/* Estilização do título*/
+
+/* Estilização do título */
 h1 {
-    color: #4caf50;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    text-shadow: 3px 3px 0px #6a1b9a;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-shadow: 4px 4px 0px #2e004d, 8px 8px 0px #000;
+    -webkit-text-stroke: 1px #000;
+    transform: rotate(-1deg);
 }
-/* Estilização do texto*/
+
+/* Estilização da caixa de texto */
 p {
     max-width: 900px;
     margin: 30px auto;
     text-align: justify;
     font-size: 1.1rem;
-    border-left: 3px solid #6a1b9a; 
-    padding-left: 20px;
+    padding: 30px;
+    background-color: #1a1a1d;
+    border: 3px solid #000;
+    outline: 2px solid #3d3d44;
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
-/* Estilização das imagens */
+/* Detalhe de "nivel de sanidade" no canto */
+p::before {
+    content: "SANITY: CRITICAL";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: #00ff41; 
+    color: #000;
+    font-weight: bold;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    border: 2px solid #000;
+}
+
+/* Estilização das imagens*/
 img {
-    border: 1px solid #00720f;
-    box-shadow: 0 10px 30px rgb(17, 0, 250);
-    transition: transform 0.5s ease, border-color 0.5s;
-    margin: 0;             
-    height: 300px;         
-    width: 100%;           
-    object-fit: cover;     
+    border: 4px solid #000;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     display: block;
+    filter: grayscale(30%) contrast(130%) sepia(20%);
 }
 
 img:hover {
-    transform: scale(1.05);
-    border-color: #1f0047; 
+    filter: grayscale(0%) contrast(150%);
+    transform: scale(1.02) rotate(1deg);
+    border-color: #00ff41; /* Brilho de habilidade ao passar o mouse */
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
 }
 
-/* Botão de compra */
+/* Estilização do botão*/
 .btn-primary {
     display: block;
-    width: 250px;
-    margin: 50px auto;
-    padding: 15px;
-    background: #4caf50;
-    color: #000;
-    border: 2px solid #fff9c4;
-    border-radius: 10px; 
+    width: 280px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #d90429; 
+    color: #fff;
+    border: 3px solid #000;
     font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.4s ease;
     text-align: center;
     text-decoration: none;
     letter-spacing: 2px;
+    box-shadow: 8px 8px 0px #000;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
-    background: #000000;
-    color: #006cfa;
-    box-shadow: 0 0 20px rgb(37, 0, 173);
-    transform: translateY(-3px);
+    background: #00ff41;
+    color: #000;
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px #000;
+}
+
+/* Ajuste para o grid */
+.row.g-3 {
+    max-width: 1100px;
+    margin: 0 auto;
 }

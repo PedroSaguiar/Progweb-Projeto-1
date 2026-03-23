@@ -1,69 +1,106 @@
-/* Armored Core Tematico */
+/* Tema: Armored Core VI */
 
 body {
-    background-color: #1a1a1a; 
-    color: #cfd8dc; 
-    font-family: 'Orbitron', sans-serif;
+    background-color: #121416; 
+    color: #d1d9e0; 
+    font-family: 'Orbitron', 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
     padding: 40px;
-    line-height: 1.8;
+    line-height: 1.7;
+    background-image: 
+        linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
-/* Estilização do título*/
+
+/* Estilização do título */
 h1 {
-    color: #00f5ff;
+    color: #00f5ff; 
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    text-shadow: 0 0 10px rgba(0, 245, 255, 0.6);
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgba(0, 245, 255, 0.6);
+    border-left: 10px solid #d90429; 
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
-/* Estilização do texto*/
+
+/* Estilização do bloco de texto */
 p {
-    max-width: 900px;
+    max-width: 950px;
     margin: 30px auto;
     text-align: justify;
-    font-size: 1.1rem;
-    border-left: 3px solid #d90429; 
-    padding-left: 20px;
+    font-size: 1rem;
+    padding: 30px;
+    background-color: rgba(20, 24, 28, 0.85);
+    border: 1px solid #333c44;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Decoração de canto para simular um HUD/interface */
+p::after {
+    content: "[SYSTEM_LOG: UPDATED]";
+    position: absolute;
+    bottom: -12px;
+    right: 15px;
+    font-size: 0.7rem;
+    color: #d90429;
+    font-weight: bold;
+    background: #121416;
+    padding: 0 8px;
 }
 
 /* Estilização das imagens */
 img {
-    border: 1px solid #262626;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-    transition: transform 0.5s ease, border-color 0.5s;
-    margin: 0;             
-    height: 300px;         
-    width: 100%;           
-    object-fit: cover;     
+    border: 2px solid #454d55;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    transition: all 0.4s ease-in-out;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     display: block;
+    filter: sepia(20%) contrast(110%) brightness(90%);
 }
 
 img:hover {
-    transform: scale(1.05);
-    border-color: #4e4947; 
+    filter: sepia(0%) contrast(120%) brightness(110%);
+    border-color: #00f5ff;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 245, 255, 0.3);
 }
 
-/* Botão de compra */
+/* Estilização do botão */
 .btn-primary {
     display: block;
-    width: 250px;
-    margin: 50px auto;
-    padding: 15px;
-    background: linear-gradient(45deg, #102027, #d90429);
-    color: #ffccbc;
-    border: 1px solid #00f5ff;
-    border-radius: 0; 
-    font-weight: bold;
+    width: 300px;
+    margin: 60px auto;
+    padding: 20px;
+    background: transparent;
+    color: #00f5ff;
+    border: 2px solid #00f5ff;
+    font-weight: 900;
     text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.4s ease;
     text-align: center;
     text-decoration: none;
+    letter-spacing: 5px;
+    position: relative;
+    transition: all 0.3s;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
 .btn-primary:hover {
-    background: #970000;
-    color: #fff;
-    box-shadow: 0 0 20px rgba(82, 79, 79, 0.8);
-    transform: translateY(-3px);
+    background: #00f5ff;
+    color: #121416;
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Ajuste parao grid */
+.row.g-3 {
+    padding: 20px 0;
 }

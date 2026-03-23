@@ -1,70 +1,112 @@
-/* Lego batman Tematico */
+/* Tema: LEGO Batman*/
 
 body {
-    background-color: #1a237e;
-    color: #ffffff; 
-    font-family: 'Bangers', cursive;
+    background-color: #1a237e; 
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 40px;
-    line-height: 1.8;
+    line-height: 1.6;
+    background-image: radial-gradient(#283593 20%, transparent 20%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
 }
+
 /* Estilização do título*/
 h1 {
-    color: #ffcc00;
+    color: #ffcc00; 
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    text-shadow: 3px 3px 0px #000;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-shadow: 4px 4px 0px #000, 0 0 10px rgba(255, 204, 0, 0.5);
+    background-color: #37474f; 
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 40px;
+    border-radius: 15px; 
+    border: 4px solid #000;
 }
+
 /* Estilização do texto*/
 p {
-    max-width: 900px;
+    max-width: 950px;
     margin: 30px auto;
     text-align: justify;
     font-size: 1.1rem;
-    border-left: 3px solid #ffcc00; 
-    padding-left: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 4px solid #000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #ffcc00; 
+    position: relative;
 }
 
-/* Estilização das imagens */
+/* Ícone visual para simular uma "peça lego" */
+p::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    width: 60px;
+    height: 15px;
+    background: #ffcc00;
+    border: 3px solid #000;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Estilização das imagens*/
 img {
-    border: 1px solid #02006e;
-    box-shadow: 0 10px 30px rgb(0, 0, 0);
-    transition: transform 0.5s ease, border-color 0.5s;
-    margin: 0;             
-    height: 300px;         
-    width: 100%;           
-    object-fit: cover;     
+    border: 6px solid #37474f;
+    border-radius: 15px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     display: block;
+    background-color: #263238;
 }
 
 img:hover {
-    transform: scale(1.05);
-    border-color: #dfb600; 
+    transform: scale(1.08) rotate(2deg); 
+    border-color: #ffcc00;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
-/* Botão de compra */
+/* Estilização do botão*/
 .btn-primary {
     display: block;
-    width: 250px;
+    width: 280px;
     margin: 50px auto;
-    padding: 15px;
-    background: #ffcc00;
-    color: #000;
-    border: 3px solid #000;
-    border-radius: 10px; 
+    padding: 20px;
+    background-color: #d32f2f; 
+    color: #fff;
+    border: 4px solid #000;
+    border-radius: 50px; 
     font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.4s ease;
     text-align: center;
     text-decoration: none;
     letter-spacing: 2px;
+    box-shadow: 0 6px 0px #b71c1c; 
+    transition: all 0.1s;
 }
 
 .btn-primary:hover {
-    background: #af9500;
-    color: #fff;
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-    transform: translateY(-3px);
+    background-color: #f44336;
+    transform: translateY(2px);
+    box-shadow: 0 4px 0px #b71c1c;
+}
+
+.btn-primary:active {
+    transform: translateY(6px);
+    box-shadow: none;
+}
+
+/* Ajuste do Grid */
+.row.g-3 {
+    max-width: 1200px;
+    margin: 0 auto;
 }

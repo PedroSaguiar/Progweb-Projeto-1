@@ -1,70 +1,102 @@
-/* The witcher Tematico */
+/* Tema: The Witcher 3 Theme*/
 
 body {
-    background-color: #1b1b1b;
-    color: #a1887f; 
-    font-family: 'MedievalSharp', serif;
+    background-color: #0c0d10; /* Preto azulado/noite gélida */
+    color: #b0a48e; /* Bege pergaminho para leitura */
+    /* Fonte serifada clássica para um ar épico/medieval */
+    font-family: 'Crimson Text', 'Georgia', serif;
     padding: 40px;
     line-height: 1.8;
 }
+
 /* Estilização do título*/
 h1 {
-    color: #cfd8dc;
+    color: #d4af37;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-    text-shadow: 0 0 15px rgba(179, 229, 252, 0.4);
-}
-/* Estilização do texto*/
-p {
-    max-width: 900px;
-    margin: 30px auto;
-    text-align: justify;
-    font-size: 1.1rem;
-    border-left: 3px solid #3e2723; 
-    padding-left: 20px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+    /* Sombra profunda para dar efeito 3D metálico */
+    text-shadow: 2px 2px 4px #000, 0 0 15px rgba(212, 175, 55, 0.3);
+    border-bottom: 2px solid #3d3d3d;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
 }
 
-/* Estilização das imagens */
+/* Estilização do texto*/
+p {
+    max-width: 950px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 30px;
+    background-color: rgba(18, 20, 24, 0.9);
+    border: 1px solid #2a2e35;
+    border-left: 4px solid #7f8c8d; /* Prata */
+    border-right: 4px solid #454545; /* Aço */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Detalhe sutil para imitar alquimia*/
+p::after {
+    content: "✧";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: #e67e22; 
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+/* Estilização das imagens*/
 img {
-    border: 1px solid #363636;
-    box-shadow: 0 10px 30px rgb(247, 148, 0);
-    transition: transform 0.5s ease, border-color 0.5s;
-    margin: 0;             
-    height: 300px;         
-    width: 100%;           
-    object-fit: cover;     
+    border: 3px solid #1a1c21;
+    outline: 1px solid #3d3d3d;
+    transition: all 0.5s ease;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
     display: block;
+    filter: sepia(15%) contrast(1.1);
 }
 
 img:hover {
-    transform: scale(1.05);
-    border-color: #fcfcfc; 
+    filter: sepia(0%) contrast(1.2) brightness(1.1);
+    border-color: #d4af37;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
 }
 
-/* Botão de compra */
+/* Estilização do botão*/
 .btn-primary {
     display: block;
-    width: 250px;
-    margin: 50px auto;
+    width: 280px;
+    margin: 60px auto;
     padding: 15px;
-    background: linear-gradient(45deg, #212121, #3e2723);
-    color: #000;
-    border: 1px solid #cfd8dc;
-    border-radius: 10px; 
+    background: linear-gradient(to bottom, #2c3e50, #1a252f);
+    color: #fff;
+    border: 1px solid #d4af37;
     font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.4s ease;
     text-align: center;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 .btn-primary:hover {
-    background: #000000;
-    color: #ffffff;
-    box-shadow: 0 0 20px rgb(252, 101, 0);
+    background: #d4af37;
+    color: #1a1c21;
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Ajuste do grid*/
+.row.g-3 {
+    padding-top: 20px;
 }
